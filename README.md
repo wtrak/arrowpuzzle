@@ -12,9 +12,13 @@ Fill every empty cell with one of four diagonal arrows: ↖ ↗ ↙ ↘.
 
 Puzzle 001 uses three starting clues and has exactly one valid solution.
 
-## Playing
+## Play
 
-Open `index.html` in any browser, or enable GitHub Pages for this repository using **Settings → Pages → Source: GitHub Actions**. The included Pages workflow will publish the prototype from `main`.
+GitHub Pages is configured to publish this repository from `main` at:
+
+`https://wtrak.github.io/arrowpuzzle/`
+
+You can also open `index.html` directly in any browser.
 
 ## Prototype features
 
