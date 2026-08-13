@@ -6,7 +6,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
-button,a{font:inherit}
+button,a,select{font:inherit}
 a{color:inherit}
 .sitebar{position:sticky;top:0;z-index:50;background:rgba(243,241,235,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(210,205,195,.8)}
 .sitebar-inner{width:min(980px,100%);margin:auto;padding:10px 15px;display:flex;align-items:center;justify-content:space-between;gap:12px}
@@ -16,6 +16,11 @@ a{color:inherit}
 .nav{display:flex;gap:5px;align-items:center}
 .nav a{font-size:12px;font-weight:800;text-decoration:none;padding:8px 10px;border-radius:9px;color:#55514a}
 .nav a:hover,.nav a.active{background:#fff;color:var(--ink)}
+.lang-select-wrap{display:flex;align-items:center;gap:4px;background:#fff;border:1px solid #d7d2c9;border-radius:9px;padding:3px 5px 3px 6px;margin-left:3px}
+.lang-globe{font-size:12px;line-height:1}
+.lang-select{appearance:auto;border:0;background:transparent;color:#4f4b45;font-size:11px;font-weight:800;max-width:92px;outline:none;cursor:pointer;padding:4px 1px}
+.language-picker{display:inline-flex;align-items:center;gap:9px;background:#fff;border:1px solid #d6d1c8;border-radius:12px;padding:8px 10px;font-size:12px;font-weight:850}
+.language-picker .lang-select{max-width:150px;font-size:12px}
 .page{width:min(980px,100%);margin:auto;padding:28px 15px 60px}
 .eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:10px;font-weight:900;color:var(--accent);margin-bottom:7px}
 h1,h2,h3,p{margin-top:0}
@@ -59,11 +64,18 @@ h1,h2,h3,p{margin-top:0}
 .notice strong{color:var(--ink)}
 .footer{margin-top:38px;text-align:center;color:#8a857d;font-size:11px}
 @media(max-width:760px){
-  .sitebar-inner{padding:9px 12px}
-  .nav a{padding:7px 8px;font-size:11px}
+  .sitebar-inner{padding:9px 10px;gap:7px}
+  .brand{font-size:13px;gap:6px}
+  .brandmark{width:28px;height:28px}
+  .nav{gap:2px}
+  .nav a{padding:7px 6px;font-size:10.5px}
+  .lang-select-wrap{padding:2px 3px 2px 4px;margin-left:1px}
+  .lang-globe{display:none}
+  .lang-select{max-width:62px;font-size:10px}
   .page{padding:20px 13px 48px}
   .hero{padding:28px 0 20px}
   .grid3{grid-template-columns:1fr}
   .grid2{grid-template-columns:1fr}
   .puzzle-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
+@media(max-width:420px){.brand span:last-child{font-size:12px}.nav a{padding:7px 5px}.sitebar-inner{gap:4px}}
