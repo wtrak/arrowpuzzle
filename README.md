@@ -1,10 +1,12 @@
-# Arrow Puzzle Prototype
+# EQUARROW
 
-A playable browser prototype for a new logic puzzle concept.
+**Four directions. One solution.**
+
+EQUARROW is a playable browser prototype for a language-free logic puzzle built around diagonal arrows, balanced rows and columns, and a one-arrow-per-dot rule.
 
 ## Start here
 
-**Brand-new players should begin with the 5-step walkthrough:**
+Brand-new players should begin with the 5-step walkthrough:
 
 `https://wtrak.github.io/arrowpuzzle/tutorial.html`
 
@@ -20,15 +22,16 @@ Fill every empty cell with one of four diagonal arrows: ↖ ↗ ↙ ↘.
 
 ## Play
 
-GitHub Pages is configured to publish this repository from `main` at:
+GitHub Pages publishes the prototype at:
 
 `https://wtrak.github.io/arrowpuzzle/`
 
-Other prototype pages include:
+Prototype pages include:
 
 - `tutorial.html` — 5-step beginner walkthrough
 - `easy3.html` — reference Easy puzzle
-- `easy-calibration.html` — Easy calibration set
+- `easy-calibration.html` — calibrated Easy set (Puzzles 005–007)
+- `easy.html` / `easy2.html` — earlier difficulty experiments
 
 ## Prototype features
 
@@ -36,9 +39,10 @@ Other prototype pages include:
 - Live row/column teaching counters
 - Dot conflict indicators
 - Rule validation
-- Reset
-- Hints and guided teaching explanations
+- Reset and guided explanations
 - Optional partial-direction pencil marks in supported puzzles
 - Mobile-friendly layout
 
-This is an early mechanic test. `ARROW` is only a working title, not a final brand name.
+## Brand
+
+**EQUARROW** combines the ideas of equilibrium/equality and arrows: rows and columns must stay balanced while every arrow direction is logically constrained.
