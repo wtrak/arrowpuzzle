@@ -9,7 +9,7 @@ document.getElementById('diffPill').textContent=p.difficulty;document.getElement
 document.getElementById('backDiff').href=diffSlug;document.getElementById('backDiff').textContent='← All '+p.difficulty+' puzzles';document.getElementById('allDiff').href=diffSlug;document.getElementById('allDiff').textContent='All '+p.difficulty;
 const ids=Object.keys(P).filter(k=>P[k].difficulty===p.difficulty).sort(),pos=ids.indexOf(id),next=ids[pos+1]||null;
 const nextEl=document.getElementById('nextPuzzle');if(next)nextEl.href='play.html?p='+next;else{nextEl.href=diffSlug;nextEl.textContent='Back to '+p.difficulty;}
-let grid,selected=null,start=Date.now(),done=false,timerId;const givens=new Set(p.givens.map(x=>x.join(',')));
+let grid,selected=null,start=Date.now()-(Number(window.EQUARROW_RESUME_ELAPSED)||0),done=false,timerId;const givens=new Set(p.givens.map(x=>x.join(',')));
 const board=document.getElementById('board'),rows=document.getElementById('rows'),cols=document.getElementById('cols'),status=document.getElementById('status'),timer=document.getElementById('timer'),message=document.getElementById('message'),win=document.getElementById('win');
 const inward=(rr,cc)=>rr===0?(cc===0?'SE':'SW'):(cc===0?'NE':'NW');
 function initial(){grid=Array.from({length:4},()=>Array(4).fill(''));p.givens.forEach(([r,c])=>grid[r][c]=p.solution[r][c]);}
