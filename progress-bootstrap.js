@@ -1,0 +1,1 @@
+(()=>{try{const P=window.EQUARROW_PUZZLES;if(!P)return;const q=new URLSearchParams(location.search),req=q.get('p')||'004',id=P[req]?req:'004',x=JSON.parse(localStorage.getItem('equarrow-progress:'+id)||'null');window.EQUARROW_RESUME_ELAPSED=x&&Number(x.elapsedMs)>0?Number(x.elapsedMs):0}catch(e){window.EQUARROW_RESUME_ELAPSED=0}})();
